@@ -20,6 +20,7 @@ pipeline {
             steps {
                 git 'https://github.com/jglick/simple-maven-project-with-tests.git'
             }
+        }
         stage("create docker image") {
             steps {
                 echo " ============== start building image =================="
