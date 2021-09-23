@@ -16,14 +16,14 @@ pipeline {
                 echo 'Hello World'
             }
         }
-        stage('connection') {
+        stage('Clone sources') {
             steps {
-                git 'https://github.com/RioRustik/Git.git'
+                git url: 'https://github.com/jfrogdev/project-examples.git'
             }
         }
         stage("Build") {
             steps {
-                echo " ============== start building image =================="
+                echo " ============== start =================="
                 dir ('Git') {
                     sh 'build .'
                 }
