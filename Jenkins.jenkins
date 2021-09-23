@@ -25,7 +25,7 @@ pipeline {
             steps {
                 echo " ============== start =================="
                 dir ('C:\\Users\\v1\\Desktop\\repo') {
-                    sh 'C:\\Users\\v1\\Desktop\\repo\\build.bat'
+                    bat 'C:\\Users\\v1\\Desktop\\repo\\build.bat'
                 }
             }
         }
