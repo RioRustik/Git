@@ -16,12 +16,12 @@ pipeline {
                 echo 'Hello World'
             }
         }
-        stage('Build') {
+        stage('connection') {
             steps {
-                git 'https://github.com/jglick/simple-maven-project-with-tests.git'
+                git 'https://github.com/RioRustik/Git.git'
             }
         }
-        stage("create docker image") {
+        stage("Build") {
             steps {
                 echo " ============== start building image =================="
                 dir ('Git') {
