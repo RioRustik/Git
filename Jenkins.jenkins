@@ -24,7 +24,7 @@ pipeline {
         stage("Build") {
             steps {
                 echo " ============== start =================="
-                dir ('C:\Users\v1\Desktop\repo') {
+                dir ('C:\\Users\\v1\\Desktop\\repo') {
                     sh 'build.bat'
                 }
             }
