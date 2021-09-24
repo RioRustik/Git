@@ -18,12 +18,12 @@ pipeline {
         }
         stage('Build') {
             steps {
-                bat 'C:\\Users\\v1\\Desktop\\clone\\build.bat'
+                bat 'build.bat'
            }
         }
         stage('test') {
             steps {
-                bat 'C:\\Users\\v1\\Desktop\\clone\\test.bat'
+                bat 'test.bat'
            }
         }
     }
