@@ -1,1 +1,1 @@
-git clone C:\Users\v1\Desktop\repo
+git C:\Users\v1\Desktop\repo
