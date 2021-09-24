@@ -11,14 +11,14 @@ pipeline {
         timestamps()
     }
     stages {
-        stage('Hello') {
-            steps {
-                echo 'Hello World'
-            }
-        }
         stage('Clone sources') {
             steps {
-                bat 'C:\\Users\\v1\\Desktop\\repo\\build.bat'
+                bat 'C:\\Users\\v1\\Desktop\\repo\\ret.bat'
+           }
+        }
+        stage('Build') {
+            steps {
+                bat 'C:\\Users\\v1\\Desktop\\clone\\Build.bat'
            }
         }
     }
