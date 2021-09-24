@@ -18,16 +18,8 @@ pipeline {
         }
         stage('Clone sources') {
             steps {
-                git url: 'https://github.com/RioRustik/Git.git'
-            }
-        }
-        stage("Build") {
-            steps {
-                echo " ============== start =================="
-                dir ('C:\\Users\\v1\\Desktop\\repo') {
-                    bat 'C:\\Users\\v1\\Desktop\\repo\\build.bat'
-                }
-            }
+                bat 'C:\\Users\\v1\\Desktop\\repo\\build.bat'
+           }
         }
     }
 }
