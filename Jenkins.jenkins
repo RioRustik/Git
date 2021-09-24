@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage('Clone sources') {
             steps {
-                bat 'C:\\Users\\v1\\Desktop\\repo\\ret.bat'
+                bat 'C:\\Users\\v1\\Desktop\\repo\\clone.bat'
            }
         }
         stage('Build') {
