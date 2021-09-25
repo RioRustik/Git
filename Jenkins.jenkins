@@ -14,7 +14,7 @@ pipeline {
         stage('Clone sources') {
             steps {
                 // bat 'C:\\Users\\v1\\Desktop\\repo\\clone.bat'
-                bat 'git clone https://github.com/RioRustik/Git.git C:\Users\v1\Desktop\clone'
+                bat 'git clone https://github.com/RioRustik/Git.git C:\\Users\\v1\\Desktop\\clone'
            }
         }
         stage('Build') {
