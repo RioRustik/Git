@@ -1,1 +1,1 @@
-git clone C:\Users\v1\Desktop\repo C:\Users\v1\Desktop\clone
+git clone https://github.com/RioRustik/Git.git C:\Users\v1\Desktop\clone
